@@ -8,8 +8,6 @@ export const GlobalStyle = createGlobalStyle `
         'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-
-        /* background: black; */
     }
 
     code {
@@ -23,16 +21,26 @@ export const GlobalStyle = createGlobalStyle `
         list-style: none;
     }
 
-    img {
-        display: block;
-        max-width: 100%;
-    }
-
     p {
         padding: 0;
     }
 
-    tbody {
+    button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* width: 60px;
+        height: 50px; */
+        padding: 10px 30px;
+        border-radius: 4px;
+        background-color: yellow;
         border: none;
+
+        transition: all 300ms ease-in-out;
+
+        &:hover {
+            transform: scale(1.03);
+            background-color: #09f;
+        }
     }
-    `;
+`

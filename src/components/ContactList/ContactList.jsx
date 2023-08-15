@@ -1,11 +1,24 @@
 import React from 'react';
+import { Button } from './ContactList.styled';
+
 
 export const ContactList = ({ contacts, deleteContact }) => (
-  <ul>
+  <ul
+  style={{
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    border: '2px solid yellow',
+    borderRadius: '8px',
+    padding: '30 20',
+    background: 'black',
+    margin: '50px',
+  }}
+  >
     {contacts.map(contact => (
       <li key={contact.id}>
         {contact.name}: {contact.number}
-        <button onClick={() => deleteContact(contact.id)}>Delete</button>
+        <Button onClick={() => deleteContact(contact.id)}>Delete</Button>
       </li>
     ))}
   </ul>

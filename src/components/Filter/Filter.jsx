@@ -1,5 +1,6 @@
+import { Input } from 'components/ContactForm/ContactForm.styled';
 import React from 'react';
 
 export const Filter = ({ value, onChange }) => (
-  <input type="text" value={value} onChange={onChange} placeholder="Search by name" />
+  <Input type="text" value={value} onChange={onChange} placeholder="Search by name" />
 );
