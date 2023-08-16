@@ -60,11 +60,11 @@ export class App extends Component {
         {!isPhonebookEmpty ? (
           <h2>Contacts</h2>
           <Filter value={filter} onChange={this.handleFilterChange} />
-          <ContactList contacts={filteredContacts} deleteContact={this.deleteContact}>
+          <ContactList contacts={filteredContacts} deleteContact={this.deleteContact} />
             {!isPhonebookEmpty && filterContacts.length === 0 && (
               <Notification message="nothing found" />
             )}
-          </ContactList>) : (<Notification message="Your phonebook is empty." />)}
+          ) : (<Notification message="Your phonebook is empty." />)}
       </Container>
     );
   }
