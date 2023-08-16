@@ -36,7 +36,6 @@ export const Label = styled.label`
     display: flex;
     flex-direction: column;
 
-    font-family: 'Roboto', 'Oxygen', sans-serif;
     font-weight: 600;
     font-size: 16px;
     line-height: 1.10;
