@@ -5,19 +5,12 @@ export const Container = styled.div`
     text-align: center;
     color: lawngreen;
     padding: 50px;
-`;
-export const Wrapper = styled.div`
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        font-size: 20px;
-        color: #f4f4f4;
-        margin: 0 auto;
+    font-family: math ,sans-serif;
+    font-size: 20px;
 `;
 
 export const Form = styled.form`
-    max-width: 40%;
+    max-width: 50%;
     
     display: flex;
     flex-direction: column;
@@ -31,13 +24,11 @@ export const Form = styled.form`
     margin: 0 auto;
 `;
 
-
 export const Label = styled.label`
     display: flex;
     flex-direction: column;
 
     font-weight: 600;
-    font-size: 16px;
     line-height: 1.10;
     letter-spacing: 0.2px;
     color: lawngreen;
@@ -67,12 +58,13 @@ export const Button = styled.button`
     display: flex;
     justify-content: center;
     align-items: center;
-    /* width: 60px;
-    height: 50px; */
-    padding: 10px 30px;
-    border-radius: 4px;
+
     background-color: yellow;
-    border: none;
+    padding: 10px 30px;
+
+    border-radius: 4px;
+    box-shadow: 0px 2px 6px 0px lawngreen;
+    border: 1px solid lawngreen;
 
     transition: all 300ms ease-in-out;
 

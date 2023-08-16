@@ -1,17 +1,42 @@
 import styled from 'styled-components'
 
 export const Button = styled.button`
-        align-items: center;
-        margin: 10px 30px;
-        padding: 10px 30px;
-        border-radius: 4px;
         background-color: yellow;
-        border: none;
+        align-items: center;
+
+        margin: 10px 10px;
+        padding: 2px 10px;
+
+        border-radius: 4px;
+        box-shadow: 0px 2px 6px 0px lawngreen;
+        border: 2px solid lawngreen;
 
         transition: all 300ms ease-in-out;
 
         &:hover {
             transform: scale(1.03);
             background-color: #09f;
+            border: 1px solid yellow;
         }
+`;
+
+export const List = styled.ul `
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border: 2px solid yellow;
+    border-radius: 8px;
+    
+    margin: 0 auto;
+    list-style: none;
+    font-size: 16px;
+`;
+
+export const Item = styled.li `
+    display: flex;
 `;
