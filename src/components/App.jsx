@@ -46,10 +46,12 @@ export class App extends Component {
   render() {
     const { filter } = this.state;
     const filteredContacts = this.getFilteredContacts();
+    const isPhonebookEmpty = contacts.length === 0;
 
     return (
       <Container>
         <h1>Phonebook</h1>
+          {isPhonebookEmpty && <Notification message="Add first contact!" />}
         <ContactForm
           addContact={this.addContact}
           isNameAlreadyExists={this.isNameAlreadyExists}
