@@ -17,14 +17,18 @@ export const Wrapper = styled.div`
 `;
 
 export const Form = styled.form`
+    max-width: 40%;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 2px solid yellow;
+    
+    border: 1px solid yellow;
+    box-shadow: 0px 2px 10px 0px lawngreen;
     border-radius: 8px;
+    
     padding: 30px 20px;
-    background: black;
-    margin: 50px;
+    margin: 0 auto;
 `;
 
 
