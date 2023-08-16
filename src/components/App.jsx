@@ -51,20 +51,14 @@ export class App extends Component {
     return (
       <Container>
         <h1>Phonebook</h1>
-        {isPhonebookEmpty && <Notification message="Add first contact!" />}
         <ContactForm
           addContact={this.addContact}
           isNameAlreadyExists={this.isNameAlreadyExists}
         />
 
-        {!isPhonebookEmpty ? (
-          <h2>Contacts</h2>
-          <Filter value={filter} onChange={this.handleFilterChange} />
-          <ContactList contacts={filteredContacts} deleteContact={this.deleteContact} />
-            {!isPhonebookEmpty && filterContacts.length === 0 && (
-              <Notification message="nothing found" />
-            )}
-          ) : (<Notification message="Your phonebook is empty." />)}
+        <h2>Contacts</h2>
+        <Filter value={filter} onChange={this.handleFilterChange} />
+        <ContactList contacts={filteredContacts} deleteContact={this.deleteContact} />
       </Container>
     );
   }
