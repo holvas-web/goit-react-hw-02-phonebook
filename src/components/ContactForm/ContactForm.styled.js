@@ -41,7 +41,7 @@ export const Label = styled.label`
     font-size: 16px;
     line-height: 1.10;
     letter-spacing: 0.2px;
-    color: yellow;
+    color: lawngreen;
     margin: 0 auto;
     padding-top: 20px;
 `;
