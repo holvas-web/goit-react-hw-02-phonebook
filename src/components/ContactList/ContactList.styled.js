@@ -38,5 +38,12 @@ export const List = styled.ul `
 `;
 
 export const Item = styled.li `
+    font-size: 14px;
+    line-height: 1.2;
     display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin: 5px;
+    padding-left: 5px;
+    padding-right: 15px;
 `;
